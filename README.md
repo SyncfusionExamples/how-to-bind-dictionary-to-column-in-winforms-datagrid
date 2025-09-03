@@ -1,11 +1,10 @@
-# How to bind dictionary to column in WinForms DataGrid (SfDataGrid)?
+# How to bind dictionary to column in WinForms DataGrid?
 
 ## About the sample
-This example illustrates how to bind dictionary to column in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid)?
+This example illustrates how to bind dictionary to column in WinForms DataGrid.
 
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to bind the **Dictionary** with [SfDataGrid.Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Columns).
-In the below code snippet marks dictionary bound to [GridColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumn.html) by specifying the property name and key to [MappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_MappingName) of [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumn.html).
-
+In the below code snippet marks dictionary bound to [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumn.html) by specifying the property name and key to [MappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_MappingName) of GridColumn.
 
 ```C#
 
@@ -32,17 +31,18 @@ studentDetails = new ObservableCollection<Model>();
 
 studentDetails.Add(new Model()
 {
-      StudentID = 101,
-      StudentName = "Joseph",
-      Age = 25,
-      Major = "Psychology",
-      Marks = dictionary,
+   StudentID = 101,
+   StudentName = "Joseph",
+   Age = 25,
+   Major = "Psychology",
+   Marks = dictionary,
 });
 
 ```
 ![Shows the dictionary bind with a column in SfDataGrid](BindDicitionary.gif)
 
 The following screenshot shows bind the Dictionary with a column, 
+
 ![Shows bind dictionary to column in SfDataGrid](dictionarybindedColumn.png)
 
 Take a moment to peruse the [WinForms DataGrid – Data Binding](https://help.syncfusion.com/windowsforms/datagrid/databinding) documentation, where you can find about data binding with code examples.
